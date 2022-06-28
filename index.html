@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+      <div class="jumbotron">
+        <h1>Tenggarong</h1>
+        <link rel="stylesheet" href="style.css">
+        <p>Tenggarong memiliki julukan Kota Raja. Julukan tersebut mengingat wilayah ini dulunya merupakan ibu kota Kesultanan Kutai Kartanegara ing Martadipura dan tempat makam raja kerajaan tersebut</p>
+      </div>
+        <nav>
+            <ul>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#geografis">Geografis</a></li>
+                <li><a href="#wisata">Wisata</a></li>
+                <li id='jam' ></li>
+                <script src="script.js"></script>
+            </ul>    
+        </nav>
+    </header>
+ <main>
+      
+    <div id="content">
+        <article id="sejarah" class="card">
+          <h2>Sejarah</h2>
+          <img src="img/museum.jpg" alt="sejarah" class="featured-image">
+          <p>
+             Kota Tenggarong sejak awal berdirinya merupakan ibu kota Kesultanan Kutai Kartanegara.
+             Sejarah menulis, semula kota ini bernama Tepian Pandan ketika Sultan Aji Imbut memindahkan ibu kota kerajaan dari Pemarangan yang
+             saat ini adalah wilayah Desa Jembayan. Oleh Sultan Aji Imbut, nama Tepian Pandan kemudian diubah menjadi Tangga Arung yang berarti rumah raja.
+             Namun pada perkembangannya, Tangga Arung lebih populer dengan sebutan "Tenggarong" hingga saat ini.
+          </p>
+        </article>
+        
+        <article id="geografis" class="card">
+          <h2>Geografis</h2>
+          <img src="img/geografis.jpg" alt="geografis" class="featured-image">
+          <p>
+              Kota Tenggarong terletak pada 116°47' - 117°04' Bujur Timur dan 0°21' - 0°34' Lintang Selatan. titik pusat tertinggi kota Tenggarong dari permukaan laut ± 500 m.
+              Tenggarong dilewati oleh aliran sungai Mahakam yang merupakan salah satu sungai terbesar di Kalimantan Timur. Kondisi lahan di Tenggarong cenderung lahan rawa di daerah dataran dekat tepian sungai dan berbukit.
+              Suhu udara rata-rata di kota Tenggarong adalah 30 °C, dengan curah hujan tahunan rata-rata 1500-2000 mm per-tahun
+          </p>
+        
+        </article>
+        
+        <article id="wisata" class="card">
+          <h2>Wisata</h2>
+          <p>
+              Berbagai obyek wisata dimiliki Kecamatan Tenggarong, Kabupaten Kutai Kartanegara (Kukar) seperti wisata Pulau Kumala, Planetarium, Waduk Panji Suka Rame, Musium
+              Kayu, Museum Mulawarman hingga makam para raja ada di Kota Tenggarong. Selain itu berbagai even berskala lokal, Nasional hingga Internasional sering digelar di kecamatan tersebut. 
+              Tak heran kalau kecamatan tersebut saat ini masuk sebagai salah satu Destinasi Pariwisata Nasional.
+          <section>
+            <h3>Pulau Kumala</h3>
+            <img src="img/pulau.jpg" alt="pulau kumala" class="featured-image">
+            <p>
+              Pulau Kumala merupakan daerah delta di Sungai Mahakam yang memanjang di sebelah Barat Kota Tenggarong, Kabupaten Kutai Kartanegara.
+              Pada awalnya Pulau Kumala ini merupakan tempat untuk ratusan ekor bekantan dan berbagai jenis reptil liar Kalimantan. Kemudian pada tahun 2002 Pemkab Kukar 
+              membangun Pulau Kumala menjadi tempat rekreasi lengkap dengan resor dan alat transportasinya.
+            </p>
+          </section>
+          <section>
+            <h3>Museum Mulawarman</h3>
+            <img src="img/museum1.jpg" alt="Museum Mulawarman" class="featured-image">
+            <p>
+              Museum Mulawarman merupakan salah salah satu destinasi wisata yang berada di Tenggarong Kutai Kartanegara (Kukar) di Kalimantan Timur (Kaltim). 
+              Museum Mulawarman bukti perjalanan sejarah sejak tahun 1936. Walaupun begitu banyak sejarah tentang peradaban di Kalimantan yang digambarkan melalui museum ini,
+            </p>
+            <p>
+              Ciri khas Museum Mulawarman pada halaman depan museum terdapat duplikat Lembu Suana yang merupakan lambing Kerajaan Kutai Kartenegara dan kolam berbentuk naga 
+              yang merupakan lambing perjalanan hidup dan penjaga alam semesta yang telah menjadi bagian dari mitos masyarakat Kutai.
+            </p>
+          </section>
+        </article>
+
+        <div class="card">
+          <form action="#" method="POST" onSubmit="validasi()">
+            <div>
+              <label>Nama Lengkap:</label>
+              <input type="text" name="nama" id="nama" />
+            </div>
+            <div>
+            <div>
+              <label>Pesan:</label>
+              <textarea cols="40" rows="5" name="pesan" id="pesan"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Submit" class="tombol">
+            </div>
+          </form>
+        </div>
+      </div>
+      <aside>
+        <article class="profile card">
+             <header>
+                 <h2>Tenggarong</h2>
+                 <p>Kota Raja</p>
+                 <figure>
+                    <img src="img/lambang.png">
+                    <figcaption>Lambang</figcaption>
+                  </figure>
+             </header>
+             <section>
+              <section class="informasi">
+                <h3>Informasi Lainnya</h3>
+                <table align="center">
+                   <tr>
+                      <th>Negara</th>
+                      <td>Indonesia</td>
+                   </tr>
+                   <tr>
+                      <th>Hari jadi</th>
+                      <td>28 September 1782</td>
+                   </tr>
+                   <tr>
+                      <th>Luas Total</th>
+                      <td>270,00 km<sup>2</sup></td>
+                   </tr>
+                   <tr>
+                      <th>Bahasa Daerah</th>
+                      <td>Kutai</td>
+                   </tr>
+                      <tr>
+                      <th>Kode Pos</th>
+                      <td>75511-75517</td>
+                   </tr>
+               </table>
+             </section>
+             </section>
+        </article>
+    </aside>
+  </main>
+    <footer>
+        <p>Ramadana Winata &#169; 2022, Universitas Muhammadiyah Yogyakarta </p>
+    </footer>
+  </body>
+</html>
